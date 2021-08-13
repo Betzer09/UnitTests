@@ -21,6 +21,7 @@
 		2337136226C6F710003A6CA1 /* SignUpFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337136126C6F710003A6CA1 /* SignUpFormRequestModel.swift */; };
 		2337136B26C6F886003A6CA1 /* SignUpResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337136A26C6F886003A6CA1 /* SignUpResponseModel.swift */; };
 		2337136F26C6F8CF003A6CA1 /* SignUpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337136E26C6F8CF003A6CA1 /* SignUpError.swift */; };
+		2337138026C70B08003A6CA1 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2337137F26C70B08003A6CA1 /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		2337136126C6F710003A6CA1 /* SignUpFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormRequestModel.swift; sourceTree = "<group>"; };
 		2337136A26C6F886003A6CA1 /* SignUpResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponseModel.swift; sourceTree = "<group>"; };
 		2337136E26C6F8CF003A6CA1 /* SignUpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpError.swift; sourceTree = "<group>"; };
+		2337137F26C70B08003A6CA1 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			children = (
 				2337137826C6F9E6003A6CA1 /* Network */,
 				2337137726C6F9E2003A6CA1 /* Models */,
+				2337137F26C70B08003A6CA1 /* MockURLProtocol.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				2337135A26C6F654003A6CA1 /* SignUpWebServiceTest.swift in Sources */,
 				2337134C26C6DDCC003A6CA1 /* SignUpFormModelValidatorTests.swift in Sources */,
+				2337138026C70B08003A6CA1 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

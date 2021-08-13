@@ -7,10 +7,12 @@
 
 import Foundation
 
-typealias SignUpResult = (Result<SignUpResponseModel, SignUpError>) -> ()
+typealias SignUpResponseCompletion = (Result<SignUpResponseModel, SignUpError>) -> ()
 
 struct SignUpConstants {
     static let firstNameMinLength = 2
     static let firstNameMaxLength = 10
-    static let passwordMinLength = 6
+    static let passwordMinLength = 8
+    
+    static let signUpURL = "http://appsdeveloperblog.com:8080/signup-mock-service/users"
 }

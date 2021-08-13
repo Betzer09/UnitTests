@@ -87,12 +87,12 @@ class SignUpFormModelValidatorTests: XCTestCase {
         
         // Act
         let isValidWithNullPassword = sut.isValidPassword(nil)
-        let isValidWithSixCharacters = sut.isValidPassword("111111")
-        let isValidWithMoreThenSixCharacters = sut.isValidPassword("11111111")
+        let isValidWithEightCharacters = sut.isValidPassword("11111111")
+        let isValidWithMoreThenSixCharacters = sut.isValidPassword("111111111111")
         let isValidWhenTooShortOfAPasswordIsPresent = sut.isValidPassword("1111")
         
         // Assert
-        XCTAssertTrue(isValidWithSixCharacters, "The isValidPassword() should have returned TRUE when at least 6 characters are passed in but instead returned FALSE")
+        XCTAssertTrue(isValidWithEightCharacters, "The isValidPassword() should have returned TRUE when at least 6 characters are passed in but instead returned FALSE")
         XCTAssertTrue(isValidWithMoreThenSixCharacters, "The isValidPassword() should have returned TRUE when at least 6 characters are passed in but instead returned FALSE")
         XCTAssertFalse(isValidWithNullPassword, "The isValidPassword() should have returned FALSE when a password with a value of null is passed in but instead returned TRUE")
         XCTAssertFalse(isValidWhenTooShortOfAPasswordIsPresent, "The isValidPassword() should have returned FALSE when a password with less then 6 characters are passed in but instead returned TRUE")
